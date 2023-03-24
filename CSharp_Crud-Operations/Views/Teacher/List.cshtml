@@ -1,0 +1,15 @@
+﻿@model IEnumerable<CSharp_Crud_Operations.Models.Teacher>
+@{
+    ViewBag.Title = "List";
+}
+
+<h2>List</h2>
+
+<p>This page should display all information of Teachers</p>
+
+@foreach(var teacher in Model){ 
+
+    <div>@teacher.TeacherFname @teacher.TeacherLname </div>
+
+}
+
