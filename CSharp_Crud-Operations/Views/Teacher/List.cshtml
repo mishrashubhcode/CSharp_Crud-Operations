@@ -9,7 +9,7 @@
 
 @foreach(var teacher in Model){ 
 
-    <div>@teacher.TeacherFname @teacher.TeacherLname </div>
+    <div><a href="/Teacher/Show/@teacher.TeacherId">@teacher.TeacherFname @teacher.TeacherLname</a></div>
 
 }
 

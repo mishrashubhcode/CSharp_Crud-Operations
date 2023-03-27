@@ -15,13 +15,23 @@ namespace CSharp_Crud_Operations.Controllers
             return View();
         }
 
-        //GET: Teachers/List
+        //GET: /Teacher/List
         public ActionResult List()
         {
-            TeacherDataController Controller = new TeacherDataController();
-            IEnumerable<Teacher> Teachers = Controller.ListTeachers();
+            TeacherDataController controller = new TeacherDataController();
+            IEnumerable<Teacher> Teachers = controller.ListTeachers();
 
             return View(Teachers);
+        }
+
+        //GET: /Teacher/Show/{id}
+
+        public ActionResult Show(int id)
+        {
+            TeacherDataController controller = new TeacherDataController();
+            Teacher teach = controller.FindTeacher(id);
+            
+            return View(teach);
         }
 
     }
