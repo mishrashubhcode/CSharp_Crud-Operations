@@ -1,0 +1,24 @@
+﻿@model CSharp_Crud_Operations.Models.Teacher
+@{
+    ViewBag.Title = "DeleteConfirm";
+}
+
+<div class="containershow">
+    
+    <h2 style="margin-top: 20px">Please confirm to delete @Model.TeacherFname @Model.TeacherLname ?</h2>
+    <p>
+        This action cannot be undone!
+    </p>
+    <nav style="width:40% ; margin:0 auto">
+        <a class="navlink" style="float:left" href="/Teacher/Show/@Model.TeacherId">Cancel</a>
+        <form method="POST" action="/Teacher/Delete/@Model.TeacherId">
+            <button class="navlink" style="float:right ; color:red">Confirm Delete</button>
+        </form>
+
+
+    </nav>
+</div>
+
+
+
+

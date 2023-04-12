@@ -10,7 +10,7 @@ namespace CSharp_Crud_Operations.Models
         //The following properties define a Teacher
 
         public int TeacherId;
-        public decimal TeacherSalary;
+        public Decimal TeacherSalary;
         public string TeacherEmployeeNumber;
         public DateTime TeacherHireDate;
         public string TeacherFname;

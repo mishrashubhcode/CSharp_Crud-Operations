@@ -1,0 +1,37 @@
+﻿
+@{
+    ViewBag.Title = "New";
+}
+
+<h2>New Teacher</h2>
+<form method="POST" action="/Teacher/Create">
+    <div>
+        <label>First Name:</label>
+        <input type="text" id="TeacherFname" name="TeacherFname" />
+    </div>
+    <div>
+        <label>Last Name:</label>
+        <input type="text" id="TeacherLname" name="TeacherLname" />
+    </div>
+    @*<div>
+        <label>Hire Date:</label>
+        <input type="datetime" id="TeacherHireDate" name="TeacherHireDate" />
+    </div>*@
+    <div>
+        <label>Employement Number:</label>
+        <input type="text" id="TeacherEmployeeNumber" name="TeacherEmployeeNumber" />
+    </div>
+    <div>
+        <label>Salary:</label>
+        <input type="text" id="TeacherSalary" name="TeacherSalary" />
+    </div>
+
+    <div>
+        <input type="submit"  value="Create Teacher"/>
+    </div>
+</form>
+
+
+
+
+
