@@ -168,7 +168,7 @@ namespace CSharp_Crud_Operations.Controllers
             MySqlCommand cmd = Conn.CreateCommand();
 
             //SQL QUERY
-            cmd.CommandText = "insert into Teachers(TeacherFname,TeacherLname,TeacherHireDate,TeacherEmployeeNumber,TeacherSalary) values(@TeacherFname,@TeacherLname,CURRENT_DATE(),@TeacherEmployeeNumber,@TeacherSalary)";
+            cmd.CommandText = "insert into Teachers(TeacherFname,TeacherLname,HireDate,EmployeeNumber,Salary) values(@TeacherFname,@TeacherLname,CURRENT_DATE(),@TeacherEmployeeNumber,@TeacherSalary)";
 
             cmd.Parameters.AddWithValue("@TeacherFname", NewTeacher.TeacherFname);
             cmd.Parameters.AddWithValue("@TeacherLname", NewTeacher.TeacherLname);
