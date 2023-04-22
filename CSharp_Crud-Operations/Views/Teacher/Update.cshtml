@@ -1,0 +1,38 @@
+﻿
+@model CSharp_Crud_Operations.Models.Teacher
+@{
+    ViewBag.Title = "Update";
+}
+
+<div id="containershow">
+    <nav>
+        <a class="navlink" href="/Teacher/List">Back to Teachers</a>
+    </nav>
+    <h2>Update Teacher</h2>
+    <form method="POST" action="/Teacher/Update">
+        <div>
+            <label>First Name:</label>
+            <input type="text" id="TeacherFname" name="TeacherFname" value="@Model.TeacherFname" />
+        </div>
+        <div>
+            <label>Last Name:</label>
+            <input type="text" id="TeacherLname" name="TeacherLname" value="@Model.TeacherLname"/>
+        </div>
+        <div>
+            <label>Hire Date:</label>
+            <input type="datetime" id="TeacherHireDate" name="TeacherHireDate" value="@Model.TeacherHireDate" />
+        </div>
+        <div>
+            <label>Employement Number:</label>
+            <input type="text" id="TeacherEmployeeNumber" name="TeacherEmployeeNumber" value="@Model.TeacherEmployeeNumber"/>
+        </div>
+        <div>
+            <label>Salary:</label>
+            <input type="text" id="TeacherSalary" name="TeacherSalary" value="@Model.TeacherSalary"/>
+        </div>
+
+        <div>
+            <input type="submit" value="Update Teacher" />
+        </div>
+    </form>
+</div>
